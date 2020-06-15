@@ -29,8 +29,10 @@ eval "$(pyenv virtualenv-init -)"
 ```
 
 ## Vim
-If needed, you can compile vim from source to ensure python support is included.
+If this is a desktop machine, you may install vim-gnome instead of vim-nox.
+
 ```
+sudo apt-get vim-nox
 cp vimrc ~/.vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
