@@ -12,6 +12,9 @@ sudo apt-get install build-essential cmake python3-dev
 
 ```
 cp bash_aliases ~/.bash_aliases
+
+# or do this
+ln -s /home/syrus/src/linux-config/bash_aliases ~/.bash_aliases
 ```
 
 ## Python
@@ -35,18 +38,6 @@ xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 
 # install python
 env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.8.3
-```
-
-### Install pyenv
-```
-curl https://pyenv.run | bash
-
-# Load pyenv automatically by adding
-# the following to ~/.bashrc:
-
-export PATH="/home/syrus/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 ```
 
 ## Vim
