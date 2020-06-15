@@ -26,14 +26,11 @@ filetype plugin indent on    " required
 
 let mapleader=','
 
-if has('gui_running')
-	set background=light
-else
-	let g:solarized_termcolors=16
+if &term == "xterm-256"
+	let g:solarized_termcolors=256
         let g:solarized_termtrans=1
-	let g:solarized_visibility="low"
+	colorscheme solarized
 endif
-colorscheme solarized
 syntax on
 
 " Enable folding with the spacebar
