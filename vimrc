@@ -29,12 +29,12 @@ let mapleader=','
 if has('gui_running')
 	set background=light
 else
-	set background=dark
 	let g:solarized_termcolors=16
         let g:solarized_termtrans=1
 	let g:solarized_visibility="low"
 endif
 colorscheme solarized
+syntax on
 
 " Enable folding with the spacebar
 nnoremap <leader>f za
