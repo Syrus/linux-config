@@ -28,7 +28,15 @@ filetype plugin indent on    " required
 
 let mapleader=','
 
-if &term == "xterm-256color"
+if &term == "xterm"
+	set background=light
+	set t_Co=256
+	let g:solarized_termcolors=256
+	let g:solarized_termtrans=1
+	colorscheme solarized
+	let g:airine_theme='solarized'
+	let g:airline_solarized_bg='light'
+elseif &term == "xterm-256color"
 	set background=light
 	set t_Co=256
 	let g:solarized_termcolors=256
