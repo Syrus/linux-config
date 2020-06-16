@@ -45,14 +45,14 @@ nnoremap <leader>f za
 let g:SimpylFold_docstring_preview=1
 
 au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-    \ let python_highlight_all=1
-    \ syntax on
+	\ set tabstop=4
+	\ set softtabstop=4
+	\ set shiftwidth=4
+	\ set expandtab
+	\ set autoindent
+	\ set fileformat=unix
+	\ let python_highlight_all=1
+	\ syntax on
 
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
