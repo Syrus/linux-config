@@ -19,6 +19,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " ...
 
 " All of your Plugins must be added before the following line
@@ -27,10 +28,14 @@ filetype plugin indent on    " required
 
 let mapleader=','
 
-if &term == "xterm-256"
+if &term == "xterm-256color"
+	set background=light
+	set t_Co=256
 	let g:solarized_termcolors=256
-        let g:solarized_termtrans=1
+	let g:solarized_termtrans=1
 	colorscheme solarized
+	let g:airine_theme='solarized'
+	let g:airline_solarized_bg='light'
 endif
 syntax on
 
