@@ -17,6 +17,17 @@ cp bash_aliases ~/.bash_aliases
 ln -s /home/syrus/src/linux-config/bash_aliases ~/.bash_aliases
 ```
 
+## Liquidprompt
+
+```
+cd
+git clone https://github.com/nojhan/liquidprompt.git
+source liquidprompt/liquidprompt
+
+# Only load Liquid Prompt in interactive shells, not from a script or from scp
+[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
+```
+
 ## Python
 
 ### Install pyenv
@@ -32,9 +43,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # to build python from source
-sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 
 # install python
 env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.8.3
