@@ -17,6 +17,17 @@ cp bash_aliases ~/.bash_aliases
 ln -s /home/syrus/src/linux-config/bash_aliases ~/.bash_aliases
 ```
 
+## Liquidprompt
+
+```
+cd
+git clone https://github.com/nojhan/liquidprompt.git
+source liquidprompt/liquidprompt
+
+# Only load Liquid Prompt in interactive shells, not from a script or from scp
+[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
+```
+
 ## Python
 
 ### Install pyenv
