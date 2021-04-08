@@ -52,7 +52,7 @@ nnoremap <leader>f za
 
 let g:SimpylFold_docstring_preview=1
 
-au BufNewFile,BufRead *.py
+au BufNewFile, BufRead *.py
 	\ set tabstop=4
 	\ set softtabstop=4
 	\ set shiftwidth=4
@@ -62,7 +62,7 @@ au BufNewFile,BufRead *.py
 	\ let python_highlight_all=1
 	\ syntax on
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufRead, BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>

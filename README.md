@@ -46,7 +46,7 @@ eval "$(pyenv virtualenv-init -)"
 sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 
 # install python
-env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.8.3
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.9.4
 ```
 
 ## Vim
